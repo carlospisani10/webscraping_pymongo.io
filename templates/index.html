@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Mars</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+
+<body>
+  <div clas="container">
+    <div class="jumbotron text-center">
+      <h1>Mars Facts!!!!!</h1>
+      <p><a class="btn btn-primary btn-lg" href="/scrape" role="button">Click Button for stuff</a></p>
+    </div>
+      
+    <!-- surf data -->
+    <div class="container">
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="col-md-4">
+          <h2>Latest Mars Info</h2>
+          <ul class = "facts_class">
+          <li>Latest News: {{mars.Latest_News}}</li>
+          <li>Information: {{mars.Information}}</li>
+          <li>Today's Feature Photo: {{mars.Feature_Photo}}</li>
+          <li>Current Mars Weather: {{mars.Current_Weather}}</li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h2>Neat Facts About Mars</h2>
+          <table class="table table-striped">
+          <thead>
+            <tr>
+              <th> Factoid </th>
+              <th> Value </th>
+          </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>Mass</th>
+              <th>{{mars.Mass}}</th>
+            </tr>
+            <tr>
+              <th>Equatorial Diameter</th>
+              <th>{{mars.Equatorial_Diameter}}</th>
+            </tr>
+            <tr>
+              <th>Orbit Period</th>
+              <th>{{mars.Orbit_Period}}</th>
+            </tr>
+          </tbody>
+          </table>
+       </div>
+        <div class="col-md-4">
+          <h2>Hemisphere High Resolution Photos</h2>
+          <ul>
+            <li><a href="{{mars.Cerberus_Hemisphere_Enhanced}}">Cerebus Hemisphere</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <hr>
+
+     
+    </div>
+
+</body>
+</html>
